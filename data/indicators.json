@@ -1,0 +1,1192 @@
+{
+  "lastUpdated": "2026-10-18",
+  "dataMode": "demo",
+  "disclaimer": "演示数据｜非实时｜未经核验，仅用于界面展示，不构成投资建议。",
+  "countrySummaries": {
+    "CN": {
+      "cycle": "周期定位：弱复苏与价格压力并存（演示判断）",
+      "detail": "官方 PMI 样例值低于 50，财新 PMI 样例值高于 50；所有数值未经核验。"
+    },
+    "US": {
+      "cycle": "周期定位：增长、通胀与利率信号需结合观察（演示判断）",
+      "detail": "核心 CPI 样例值为 2.6%，2s10s 利差样例值为 31bp；所有数值未经核验。"
+    }
+  },
+  "overview": {
+    "summaryLines": [
+      "通胀：演示数据中的美国 CPI 与核心 CPI 均高于 2% 参考线；数值未经核验。",
+      "增长：中国官方 PMI 与财新 PMI 在本组样例中呈现分化；数值未经核验。",
+      "流动性：中美利差及人民币汇率序列为界面演示数据，未连接实时数据。"
+    ],
+    "focusItems": [
+      "重要经济数据日程为演示样例，使用前请核验官方发布安排。",
+      "2026-10-29 美国 9 月 PCE（演示日程，待核验）。"
+    ],
+    "miniCharts": [
+      {
+        "id": "spread",
+        "title": "中美10Y利差",
+        "unit": "bp",
+        "data": [
+          {
+            "date": "2026-03",
+            "value": -280
+          },
+          {
+            "date": "2026-04",
+            "value": -292
+          },
+          {
+            "date": "2026-05",
+            "value": -305
+          },
+          {
+            "date": "2026-06",
+            "value": -318
+          },
+          {
+            "date": "2026-07",
+            "value": -324
+          },
+          {
+            "date": "2026-08",
+            "value": -331
+          },
+          {
+            "date": "2026-09",
+            "value": -340
+          },
+          {
+            "date": "2026-10",
+            "value": -350
+          }
+        ]
+      },
+      {
+        "id": "fx",
+        "title": "人民币汇率（演示序列）",
+        "unit": "人民币/美元",
+        "data": [
+          {
+            "date": "2026-03",
+            "value": 6.7
+          },
+          {
+            "date": "2026-04",
+            "value": 6.72
+          },
+          {
+            "date": "2026-05",
+            "value": 6.71
+          },
+          {
+            "date": "2026-06",
+            "value": 6.73
+          },
+          {
+            "date": "2026-07",
+            "value": 6.75
+          },
+          {
+            "date": "2026-08",
+            "value": 6.74
+          },
+          {
+            "date": "2026-09",
+            "value": 6.76
+          },
+          {
+            "date": "2026-10",
+            "value": 6.74
+          }
+        ]
+      },
+      {
+        "id": "oil",
+        "title": "布伦特原油",
+        "unit": "美元/桶",
+        "data": [
+          {
+            "date": "2026-03",
+            "value": 85
+          },
+          {
+            "date": "2026-04",
+            "value": 88
+          },
+          {
+            "date": "2026-05",
+            "value": 91
+          },
+          {
+            "date": "2026-06",
+            "value": 94
+          },
+          {
+            "date": "2026-07",
+            "value": 97
+          },
+          {
+            "date": "2026-08",
+            "value": 101
+          },
+          {
+            "date": "2026-09",
+            "value": 103
+          },
+          {
+            "date": "2026-10",
+            "value": 105
+          }
+        ]
+      }
+    ]
+  },
+  "indicators": [
+    {
+      "id": "cn_pmi",
+      "name": "官方制造业 PMI",
+      "country": "CN",
+      "unit": "点",
+      "decimals": 1,
+      "threshold": 50,
+      "thresholdLabel": "参考线",
+      "latest": {
+        "value": 49.8,
+        "prev": 49.2,
+        "date": "2026-08-31"
+      },
+      "history": [
+        {
+          "date": "2026-01-31",
+          "value": 48.6
+        },
+        {
+          "date": "2026-02-28",
+          "value": 48.7
+        },
+        {
+          "date": "2026-03-31",
+          "value": 48.8
+        },
+        {
+          "date": "2026-04-30",
+          "value": 48.9
+        },
+        {
+          "date": "2026-05-31",
+          "value": 49.0
+        },
+        {
+          "date": "2026-06-30",
+          "value": 49.1
+        },
+        {
+          "date": "2026-07-31",
+          "value": 49.2
+        },
+        {
+          "date": "2026-08-31",
+          "value": 49.8
+        }
+      ],
+      "interpretation": {
+        "status": "49.8点，低于荣枯线",
+        "meaning": "制造业景气仍偏弱",
+        "watch": "后续读数能否回到50以上"
+      }
+    },
+    {
+      "id": "cn_caixin",
+      "name": "财新制造业 PMI",
+      "country": "CN",
+      "unit": "点",
+      "decimals": 1,
+      "threshold": 50,
+      "thresholdLabel": "参考线",
+      "latest": {
+        "value": 51.5,
+        "prev": 50.9,
+        "date": "2026-08-31"
+      },
+      "history": [
+        {
+          "date": "2026-01-31",
+          "value": 50.2
+        },
+        {
+          "date": "2026-02-28",
+          "value": 50.3
+        },
+        {
+          "date": "2026-03-31",
+          "value": 50.4
+        },
+        {
+          "date": "2026-04-30",
+          "value": 50.5
+        },
+        {
+          "date": "2026-05-31",
+          "value": 50.7
+        },
+        {
+          "date": "2026-06-30",
+          "value": 50.8
+        },
+        {
+          "date": "2026-07-31",
+          "value": 50.9
+        },
+        {
+          "date": "2026-08-31",
+          "value": 51.5
+        }
+      ],
+      "interpretation": {
+        "status": "51.5点，高于荣枯线",
+        "meaning": "与官方 PMI 呈现分化",
+        "watch": "两项调查的差异是否收敛"
+      }
+    },
+    {
+      "id": "cn_cpi",
+      "name": "CPI 同比",
+      "country": "CN",
+      "unit": "%",
+      "decimals": 1,
+      "threshold": 2,
+      "thresholdLabel": "参考线",
+      "latest": {
+        "value": 0.8,
+        "prev": 0.5,
+        "date": "2026-08-31"
+      },
+      "history": [
+        {
+          "date": "2026-01-31",
+          "value": 0.1
+        },
+        {
+          "date": "2026-02-28",
+          "value": 0.2
+        },
+        {
+          "date": "2026-03-31",
+          "value": 0.2
+        },
+        {
+          "date": "2026-04-30",
+          "value": 0.3
+        },
+        {
+          "date": "2026-05-31",
+          "value": 0.4
+        },
+        {
+          "date": "2026-06-30",
+          "value": 0.4
+        },
+        {
+          "date": "2026-07-31",
+          "value": 0.5
+        },
+        {
+          "date": "2026-08-31",
+          "value": 0.8
+        }
+      ],
+      "interpretation": {
+        "status": "同比温和回升",
+        "meaning": "价格水平仍需观察",
+        "watch": "后续读数能否持续回升"
+      }
+    },
+    {
+      "id": "cn_ppi",
+      "name": "PPI 同比",
+      "country": "CN",
+      "unit": "%",
+      "decimals": 1,
+      "threshold": 0,
+      "thresholdLabel": "参考线",
+      "latest": {
+        "value": 3.8,
+        "prev": 3.5,
+        "date": "2026-08-31"
+      },
+      "history": [
+        {
+          "date": "2026-01-31",
+          "value": 2.6
+        },
+        {
+          "date": "2026-02-28",
+          "value": 2.8
+        },
+        {
+          "date": "2026-03-31",
+          "value": 2.9
+        },
+        {
+          "date": "2026-04-30",
+          "value": 3.0
+        },
+        {
+          "date": "2026-05-31",
+          "value": 3.2
+        },
+        {
+          "date": "2026-06-30",
+          "value": 3.4
+        },
+        {
+          "date": "2026-07-31",
+          "value": 3.5
+        },
+        {
+          "date": "2026-08-31",
+          "value": 3.8
+        }
+      ],
+      "interpretation": {
+        "status": "高于前值",
+        "meaning": "上游价格变化影响行业利润",
+        "watch": "涨幅是否继续扩大"
+      }
+    },
+    {
+      "id": "cn_ind",
+      "name": "工业增加值同比",
+      "country": "CN",
+      "unit": "%",
+      "decimals": 1,
+      "threshold": null,
+      "latest": {
+        "value": 5.2,
+        "prev": 4.5,
+        "date": "2026-08-31"
+      },
+      "history": [
+        {
+          "date": "2026-01-31",
+          "value": 4.0
+        },
+        {
+          "date": "2026-02-28",
+          "value": 4.1
+        },
+        {
+          "date": "2026-03-31",
+          "value": 4.2
+        },
+        {
+          "date": "2026-04-30",
+          "value": 4.2
+        },
+        {
+          "date": "2026-05-31",
+          "value": 4.3
+        },
+        {
+          "date": "2026-06-30",
+          "value": 4.4
+        },
+        {
+          "date": "2026-07-31",
+          "value": 4.5
+        },
+        {
+          "date": "2026-08-31",
+          "value": 5.2
+        }
+      ],
+      "interpretation": {
+        "status": "高于前值",
+        "meaning": "工业生产增速回升",
+        "watch": "后续增速能否保持"
+      }
+    },
+    {
+      "id": "cn_retail",
+      "name": "社零同比",
+      "country": "CN",
+      "unit": "%",
+      "decimals": 1,
+      "threshold": null,
+      "latest": {
+        "value": 0.4,
+        "prev": 0.6,
+        "date": "2026-08-31"
+      },
+      "history": [
+        {
+          "date": "2026-01-31",
+          "value": 0.8
+        },
+        {
+          "date": "2026-02-28",
+          "value": 0.8
+        },
+        {
+          "date": "2026-03-31",
+          "value": 0.7
+        },
+        {
+          "date": "2026-04-30",
+          "value": 0.7
+        },
+        {
+          "date": "2026-05-31",
+          "value": 0.7
+        },
+        {
+          "date": "2026-06-30",
+          "value": 0.6
+        },
+        {
+          "date": "2026-07-31",
+          "value": 0.6
+        },
+        {
+          "date": "2026-08-31",
+          "value": 0.4
+        }
+      ],
+      "interpretation": {
+        "status": "低于前值",
+        "meaning": "消费相关数据偏弱",
+        "watch": "后续读数及政策效果"
+      }
+    },
+    {
+      "id": "cn_tsf",
+      "name": "社融存量同比",
+      "country": "CN",
+      "unit": "%",
+      "decimals": 1,
+      "threshold": null,
+      "latest": {
+        "value": 7.2,
+        "prev": 7.4,
+        "date": "2026-08-31"
+      },
+      "history": [
+        {
+          "date": "2026-01-31",
+          "value": 8.0
+        },
+        {
+          "date": "2026-02-28",
+          "value": 7.9
+        },
+        {
+          "date": "2026-03-31",
+          "value": 7.8
+        },
+        {
+          "date": "2026-04-30",
+          "value": 7.7
+        },
+        {
+          "date": "2026-05-31",
+          "value": 7.6
+        },
+        {
+          "date": "2026-06-30",
+          "value": 7.5
+        },
+        {
+          "date": "2026-07-31",
+          "value": 7.4
+        },
+        {
+          "date": "2026-08-31",
+          "value": 7.2
+        }
+      ],
+      "interpretation": {
+        "status": "低于前值",
+        "meaning": "社融存量增速有所回落",
+        "watch": "后续融资需求能否企稳"
+      }
+    },
+    {
+      "id": "cn_cgb10",
+      "name": "10 年期国债收益率",
+      "country": "CN",
+      "unit": "%",
+      "decimals": 2,
+      "threshold": null,
+      "latest": {
+        "value": 1.71,
+        "prev": 1.72,
+        "date": "2026-09-30"
+      },
+      "history": [
+        {
+          "date": "2026-02-28",
+          "value": 1.8
+        },
+        {
+          "date": "2026-03-30",
+          "value": 1.79
+        },
+        {
+          "date": "2026-04-30",
+          "value": 1.77
+        },
+        {
+          "date": "2026-05-30",
+          "value": 1.76
+        },
+        {
+          "date": "2026-06-30",
+          "value": 1.75
+        },
+        {
+          "date": "2026-07-30",
+          "value": 1.73
+        },
+        {
+          "date": "2026-08-30",
+          "value": 1.72
+        },
+        {
+          "date": "2026-09-30",
+          "value": 1.71
+        }
+      ],
+      "interpretation": {
+        "status": "低于前值",
+        "meaning": "长端利率处于较低水平",
+        "watch": "收益率后续变化"
+      }
+    },
+    {
+      "id": "us_ism",
+      "name": "ISM 制造业指数",
+      "country": "US",
+      "unit": "点",
+      "decimals": 1,
+      "threshold": 50,
+      "thresholdLabel": "参考线",
+      "latest": {
+        "value": 50.6,
+        "prev": 50.4,
+        "date": "2026-08-31"
+      },
+      "history": [
+        {
+          "date": "2026-01-31",
+          "value": 49.8
+        },
+        {
+          "date": "2026-02-28",
+          "value": 49.9
+        },
+        {
+          "date": "2026-03-31",
+          "value": 50.0
+        },
+        {
+          "date": "2026-04-30",
+          "value": 50.1
+        },
+        {
+          "date": "2026-05-31",
+          "value": 50.2
+        },
+        {
+          "date": "2026-06-30",
+          "value": 50.3
+        },
+        {
+          "date": "2026-07-31",
+          "value": 50.4
+        },
+        {
+          "date": "2026-08-31",
+          "value": 50.6
+        }
+      ],
+      "interpretation": {
+        "status": "略高于荣枯线",
+        "meaning": "制造业指数接近扩张区间",
+        "watch": "能否持续站在50以上"
+      }
+    },
+    {
+      "id": "us_nfp",
+      "name": "非农新增就业",
+      "country": "US",
+      "unit": "万人",
+      "decimals": 1,
+      "threshold": null,
+      "latest": {
+        "value": 16.2,
+        "prev": 2.1,
+        "date": "2026-08-31"
+      },
+      "history": [
+        {
+          "date": "2026-01-31",
+          "value": 18.0
+        },
+        {
+          "date": "2026-02-28",
+          "value": 15.3
+        },
+        {
+          "date": "2026-03-31",
+          "value": 12.7
+        },
+        {
+          "date": "2026-04-30",
+          "value": 10.1
+        },
+        {
+          "date": "2026-05-31",
+          "value": 7.4
+        },
+        {
+          "date": "2026-06-30",
+          "value": 4.8
+        },
+        {
+          "date": "2026-07-31",
+          "value": 2.1
+        },
+        {
+          "date": "2026-08-31",
+          "value": 16.2
+        }
+      ],
+      "interpretation": {
+        "status": "就业新增样例值回升",
+        "meaning": "就业新增读数变化较大",
+        "watch": "后续就业数据及修订值"
+      }
+    },
+    {
+      "id": "us_unemp",
+      "name": "失业率",
+      "country": "US",
+      "unit": "%",
+      "decimals": 1,
+      "threshold": null,
+      "latest": {
+        "value": 4.1,
+        "prev": 4.1,
+        "date": "2026-08-31"
+      },
+      "history": [
+        {
+          "date": "2026-01-31",
+          "value": 3.8
+        },
+        {
+          "date": "2026-02-28",
+          "value": 3.8
+        },
+        {
+          "date": "2026-03-31",
+          "value": 3.9
+        },
+        {
+          "date": "2026-04-30",
+          "value": 3.9
+        },
+        {
+          "date": "2026-05-31",
+          "value": 4.0
+        },
+        {
+          "date": "2026-06-30",
+          "value": 4.0
+        },
+        {
+          "date": "2026-07-31",
+          "value": 4.1
+        },
+        {
+          "date": "2026-08-31",
+          "value": 4.1
+        }
+      ],
+      "interpretation": {
+        "status": "与前值持平",
+        "meaning": "失业率样例值暂时稳定",
+        "watch": "是否出现持续上行"
+      }
+    },
+    {
+      "id": "us_cpi",
+      "name": "CPI 同比",
+      "country": "US",
+      "unit": "%",
+      "decimals": 1,
+      "threshold": 2,
+      "thresholdLabel": "参考线",
+      "latest": {
+        "value": 3.7,
+        "prev": 3.4,
+        "date": "2026-09-30"
+      },
+      "history": [
+        {
+          "date": "2026-02-28",
+          "value": 3.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": 3.1
+        },
+        {
+          "date": "2026-04-30",
+          "value": 3.1
+        },
+        {
+          "date": "2026-05-30",
+          "value": 3.2
+        },
+        {
+          "date": "2026-06-30",
+          "value": 3.3
+        },
+        {
+          "date": "2026-07-30",
+          "value": 3.3
+        },
+        {
+          "date": "2026-08-30",
+          "value": 3.4
+        },
+        {
+          "date": "2026-09-30",
+          "value": 3.7
+        }
+      ],
+      "interpretation": {
+        "status": "高于前值",
+        "meaning": "通胀读数有所回升",
+        "watch": "后续读数能否继续上行"
+      }
+    },
+    {
+      "id": "us_core_cpi",
+      "name": "核心 CPI 同比",
+      "country": "US",
+      "unit": "%",
+      "decimals": 1,
+      "threshold": 2,
+      "thresholdLabel": "参考线",
+      "latest": {
+        "value": 2.6,
+        "prev": 2.4,
+        "date": "2026-09-30"
+      },
+      "history": [
+        {
+          "date": "2026-02-28",
+          "value": 2.3
+        },
+        {
+          "date": "2026-03-30",
+          "value": 2.3
+        },
+        {
+          "date": "2026-04-30",
+          "value": 2.3
+        },
+        {
+          "date": "2026-05-30",
+          "value": 2.3
+        },
+        {
+          "date": "2026-06-30",
+          "value": 2.4
+        },
+        {
+          "date": "2026-07-30",
+          "value": 2.4
+        },
+        {
+          "date": "2026-08-30",
+          "value": 2.4
+        },
+        {
+          "date": "2026-09-30",
+          "value": 2.6
+        }
+      ],
+      "interpretation": {
+        "status": "高于前值",
+        "meaning": "核心通胀读数有所回升",
+        "watch": "后续读数与服务通胀"
+      }
+    },
+    {
+      "id": "us_fed",
+      "name": "联邦基金利率",
+      "country": "US",
+      "unit": "%",
+      "decimals": 2,
+      "threshold": null,
+      "latest": {
+        "value": 4.0,
+        "prev": 3.75,
+        "date": "2026-09-16"
+      },
+      "history": [
+        {
+          "date": "2026-02-16",
+          "value": 4.5
+        },
+        {
+          "date": "2026-03-16",
+          "value": 4.38
+        },
+        {
+          "date": "2026-04-16",
+          "value": 4.25
+        },
+        {
+          "date": "2026-05-16",
+          "value": 4.12
+        },
+        {
+          "date": "2026-06-16",
+          "value": 4.0
+        },
+        {
+          "date": "2026-07-16",
+          "value": 3.88
+        },
+        {
+          "date": "2026-08-16",
+          "value": 3.75
+        },
+        {
+          "date": "2026-09-16",
+          "value": 4.0
+        }
+      ],
+      "interpretation": {
+        "status": "高于前值",
+        "meaning": "政策利率样例值上调",
+        "watch": "后续政策声明及会议决定"
+      }
+    },
+    {
+      "id": "us_spread",
+      "name": "2s10s 利差",
+      "country": "US",
+      "unit": "bp",
+      "decimals": 0,
+      "threshold": 0,
+      "thresholdLabel": "参考线",
+      "latest": {
+        "value": 31,
+        "prev": 25,
+        "date": "2026-09-30"
+      },
+      "history": [
+        {
+          "date": "2026-02-28",
+          "value": -18.0
+        },
+        {
+          "date": "2026-03-30",
+          "value": -11.0
+        },
+        {
+          "date": "2026-04-30",
+          "value": -4.0
+        },
+        {
+          "date": "2026-05-30",
+          "value": 4.0
+        },
+        {
+          "date": "2026-06-30",
+          "value": 11.0
+        },
+        {
+          "date": "2026-07-30",
+          "value": 18.0
+        },
+        {
+          "date": "2026-08-30",
+          "value": 25
+        },
+        {
+          "date": "2026-09-30",
+          "value": 31
+        }
+      ],
+      "interpretation": {
+        "status": "高于前值",
+        "meaning": "2s10s 利差样例值扩大",
+        "watch": "是否再次收窄或转负"
+      }
+    },
+    {
+      "id": "us_oil",
+      "name": "布伦特原油",
+      "country": "US",
+      "unit": "美元/桶",
+      "decimals": 1,
+      "threshold": null,
+      "latest": {
+        "value": 105.3,
+        "prev": 103.8,
+        "date": "2026-09-12"
+      },
+      "history": [
+        {
+          "date": "2026-02-12",
+          "value": 85.0
+        },
+        {
+          "date": "2026-03-12",
+          "value": 88.1
+        },
+        {
+          "date": "2026-04-12",
+          "value": 91.3
+        },
+        {
+          "date": "2026-05-12",
+          "value": 94.4
+        },
+        {
+          "date": "2026-06-12",
+          "value": 97.5
+        },
+        {
+          "date": "2026-07-12",
+          "value": 100.7
+        },
+        {
+          "date": "2026-08-12",
+          "value": 103.8
+        },
+        {
+          "date": "2026-09-12",
+          "value": 105.3
+        }
+      ],
+      "interpretation": {
+        "status": "高于前值",
+        "meaning": "能源价格存在波动风险",
+        "watch": "油价是否继续上行"
+      }
+    }
+  ],
+  "calendar": [
+    {
+      "date": "2026-10-15",
+      "time": "10:00",
+      "title": "中国Q3 GDP",
+      "country": "CN",
+      "status": "released",
+      "actual": "4.6%",
+      "forecast": "4.8%"
+    },
+    {
+      "date": "2026-10-17",
+      "time": "20:30",
+      "title": "美国9月PPI",
+      "country": "US",
+      "status": "released",
+      "actual": "6.3%",
+      "forecast": "5.4%"
+    },
+    {
+      "date": "2026-10-29",
+      "time": "20:30",
+      "title": "美国9月PCE",
+      "country": "US",
+      "status": "upcoming"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "美国中期选举",
+      "country": "US",
+      "status": "upcoming"
+    },
+    {
+      "date": "2026-11-09",
+      "time": "09:30",
+      "title": "中国10月CPI/PPI",
+      "country": "CN",
+      "status": "upcoming"
+    },
+    {
+      "date": "2026-11-13",
+      "time": "21:30",
+      "title": "美国10月CPI",
+      "country": "US",
+      "status": "upcoming"
+    }
+  ],
+  "warningSignals": [
+    {
+      "id": "w1",
+      "name": "2s10s利差",
+      "currentStatus": "待接入",
+      "threshold": "转负（<0bp）",
+      "historyNote": "历史上常作为衰退风险观察指标，不是确定性预测",
+      "triggered": false
+    },
+    {
+      "id": "w2",
+      "name": "信用利差",
+      "currentStatus": "待接入",
+      "threshold": "走阔超200bp（口径待定义）",
+      "historyNote": "信用利差快速走阔可反映融资压力，需明确债券口径",
+      "triggered": false
+    },
+    {
+      "id": "w3",
+      "name": "失业率拐点",
+      "currentStatus": "待接入",
+      "threshold": "从近12个月低点上升0.5个百分点（示例）",
+      "historyNote": "与萨姆规则相关，但需按官方定义计算且不保证预测结果",
+      "triggered": false
+    },
+    {
+      "id": "w4",
+      "name": "PMI持续收缩",
+      "currentStatus": "待接入",
+      "threshold": "连续6个月低于50（示例）",
+      "historyNote": "反映调查口径下的持续收缩，需注明具体 PMI 系列",
+      "triggered": false
+    },
+    {
+      "id": "w5",
+      "name": "油价冲击",
+      "currentStatus": "待接入",
+      "threshold": "3个月内上涨超过50%（示例）",
+      "historyNote": "能源价格冲击可能影响通胀与需求，不能单独判定危机",
+      "triggered": false
+    },
+    {
+      "id": "w6",
+      "name": "VIX恐慌指数",
+      "currentStatus": "待接入",
+      "threshold": "突破30（示例）",
+      "historyNote": "衡量市场隐含波动率，需结合其他指标解读",
+      "triggered": false
+    },
+    {
+      "id": "w7",
+      "name": "中美10Y利差",
+      "currentStatus": "待接入",
+      "threshold": "中国收益率减美国收益率低于-400bp（示例）",
+      "historyNote": "利差可能影响汇率及跨境资金预期，不应单独推断汇率方向",
+      "triggered": false
+    },
+    {
+      "id": "w8",
+      "name": "美元短期融资压力",
+      "currentStatus": "待接入",
+      "threshold": "SOFR相关利差超过20bp（口径待定义）",
+      "historyNote": "需在后续阶段明确采用的利差定义、来源与频率",
+      "triggered": false
+    },
+    {
+      "id": "w9",
+      "name": "中国地产销售",
+      "currentStatus": "待接入",
+      "threshold": "销售同比降幅扩大至-20%（示例）",
+      "historyNote": "需明确采用的销售口径、同比区间与数据来源",
+      "triggered": false
+    },
+    {
+      "id": "w10",
+      "name": "美国利息支出/GDP",
+      "currentStatus": "待接入",
+      "threshold": "高于4%（示例）",
+      "historyNote": "需明确利息支出口径与 GDP 统计区间，不能单独判定债务危机",
+      "triggered": false
+    }
+  ],
+  "assetRows": [
+    {
+      "asset": "股票（成长）",
+      "cn": "—",
+      "us": "—",
+      "reason": "待Phase 3接入规则引擎"
+    },
+    {
+      "asset": "股票（价值/红利）",
+      "cn": "—",
+      "us": "—",
+      "reason": "待Phase 3接入规则引擎"
+    },
+    {
+      "asset": "国债（短端）",
+      "cn": "—",
+      "us": "—",
+      "reason": "待Phase 3接入规则引擎"
+    },
+    {
+      "asset": "国债（长端）",
+      "cn": "—",
+      "us": "—",
+      "reason": "待Phase 3接入规则引擎"
+    },
+    {
+      "asset": "信用债",
+      "cn": "—",
+      "us": "—",
+      "reason": "待Phase 3接入规则引擎"
+    },
+    {
+      "asset": "商品（能源）",
+      "cn": "—",
+      "us": "—",
+      "reason": "待Phase 3接入规则引擎"
+    },
+    {
+      "asset": "黄金",
+      "cn": "—",
+      "us": "—",
+      "reason": "待Phase 3接入规则引擎"
+    },
+    {
+      "asset": "现金",
+      "cn": "—",
+      "us": "—",
+      "reason": "待Phase 3接入规则引擎"
+    }
+  ],
+  "historicalAnalogies": [
+    {
+      "period": "2000年",
+      "signals": "估值偏高与科技行业预期变化",
+      "outcome": "科技股估值经历调整，增长结构随后变化",
+      "match": "—"
+    },
+    {
+      "period": "2007—2009年",
+      "signals": "信贷扩张与金融体系风险累积",
+      "outcome": "全球金融体系承压并进入衰退阶段",
+      "match": "—"
+    },
+    {
+      "period": "2019年",
+      "signals": "全球制造业走弱与政策不确定性",
+      "outcome": "增长动能偏弱，后续受到多重冲击",
+      "match": "—"
+    },
+    {
+      "period": "2022年",
+      "signals": "通胀压力与主要央行收紧政策",
+      "outcome": "金融条件收紧，资产表现分化",
+      "match": "—"
+    }
+  ]
+}

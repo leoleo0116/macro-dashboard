@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+html { background: #f8fafc; }
+body { margin: 0; background: #f8fafc; color: #0f172a; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.card { border: 1px solid #e2e8f0; border-radius: 14px; background: white; }
+::selection { background: #dbeafe; }
+.eyebrow { color: #94a3b8; font-size: 10px; font-weight: 600; letter-spacing: .14em; }
